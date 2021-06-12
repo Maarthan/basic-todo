@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>TodoList</title>
+</head>
+
+<body>
+    <!-- top bar -->
+    <header>
+        <h1>TodoList</h1>
+    </header>
+
+    <!-- todo form  -->
+    <section class="todo-form">
+        <form>
+            <div class="todo-label">
+                <label for="todo">Todo</label>
+            </div>
+            <div class="todo-input">
+                <input type="text" id="todo" placeholder="Enter your todo">
+                <button type="button" id="btn">Add</button>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- todo list -->
+    <section class="all-todos">
+        <ul class="todo-container" id="todos">
+        </ul>
+    </section>
+    <script src="scripts/todo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    background-color: #DBF536;
+    padding: 0.5rem 2rem;
+}
+
+.todo-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 3rem 0;
+}
+form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-input > input{
+    width: 73%;
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    font-size: 1.1rem;
+}
+
+.todo-input > button{
+    width: 23%;
+    background-color: #DBF536;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.todo-input > button:hover{
+    transform: translateY(-5px);
+}
+
+.todo-label{
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.all-todos{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.todo-container > .list{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid black;
+}
